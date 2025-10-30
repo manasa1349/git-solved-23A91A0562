@@ -101,3 +101,4 @@ These are for testing and research purposes only — not for production.
 
 ## License
 MIT License
+## FAQ
