@@ -10,8 +10,8 @@ A comprehensive CI/CD configuration management tool for enterprise deployments �
   - Beta: `2.0.0` (Development)  
   - Experimental: `3.0.0-experimental` (Testing)
 - **Environments**: Production, Development, Experimental
-- **Student**: [YOUR NAME]  
-- **Student ID**: [YOUR ID]  
+- **Student**: Manasa Tadi 
+- **Student ID**: 23A91A0562  
 - **Maintainer**: DevOps Team / DevOps Innovation Team
 
 ---
@@ -102,4 +102,11 @@ These are for testing and research purposes only — not for production.
 ## License
 MIT License
 ## FAQ
-update
+**Q1. What is the purpose of this repository?**  
+This repository demonstrates Git conflict resolution, branching, rebasing, and advanced command usage for learning purposes.
+
+**Q2. Who created this project?**  
+Manasa Tadi — as part of the Git Mastery Challenge on 30/10/2025.
+
+**Q3. Can others use this repository?**  
+Yes, it’s open-source under the MIT License.
