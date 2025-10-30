@@ -2,32 +2,37 @@ application:
   name: DevOpsSimulator
   version: 2.0.0
   environment: production
+  experimental_mode: false   
 
 server:
   host: 0.0.0.0
   port: 8080
   ssl_enabled: true
-  hot_reload: false 
+  hot_reload: false
   dev_port: 3000
+  multi_port: [9000, 9001, 9002]
 
 logging:
   level: INFO
   format: json
   output: /var/log/app.log
   show_stack_trace: false
+  structured_logging: false
+  ai_analysis: disabled
 
 database:
   host: prod-db.example.com
   port: 5432
   name: devops_prod
+  distributed: false  
 
 features:
   auto_scaling: true
   load_balancer: enabled
   backup_enabled: true
-  experimental_features: false 
+  experimental_features: false
+  chaos_engineering: false
 
-# Development configurations
 development:
   enabled: false
   mock_external_apis: false
@@ -38,3 +43,24 @@ notifications:
   slack_webhook: "https://hooks.slack.com/services/XXX"
   discord_webhook: "https://discord.com/api/webhooks/YYY"
   email_alerts: false
+
+# ==========================
+# Experimental Configuration
+# ==========================
+experimental:
+  version: 3.0.0-experimental
+  environment: testing
+  ai_features:
+    predictive_scaling: true
+    anomaly_detection: true
+    auto_optimization: true
+    model_version: "v2.1.0"
+  cloud_providers:
+    - aws
+    - azure
+    - gcp
+    - digitalocean
+  security:
+    zero_trust: enabled
+    encryption: AES-256
+    audit_logging: comprehensive
